@@ -2,7 +2,7 @@
  * @Author: uapv1701795
  * @Date:   2018-11-27T11:05:16+01:00
  * @Last modified by:   uapv1701795
- * @Last modified time: 2018-11-27T11:45:19+01:00
+ * @Last modified time: 2018-11-27T11:47:11+01:00
  */
 
  package com.FizzBuzz;
@@ -19,5 +19,11 @@ class FizzBuzzTest {
   @Test
   void shouldPass() {
     System.out.println("Vous passerez !");
+  }
+  @Test
+  @DisplayName("return 1")
+  void shouldReturn1When1() {
+    FizzBuzz FB = new FizzBuzz();
+    assertEquals("1", FB.getResult(1));
   }
  }
